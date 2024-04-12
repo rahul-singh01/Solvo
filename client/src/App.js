@@ -27,6 +27,8 @@ import Profile from './Components/Profile/Profile';
 
 import Err404 from './Components/Error/404';
 
+import Tnc from './Components/Info/AllPolicies';
+
 
 const root_theme = document.querySelector(':root')
 let theme = 'white';
@@ -58,11 +60,19 @@ const App = () => {
   return (<>
     
     <Routes>
-      <Route path="/auth" element={<></>}/>
+      {/* <Route path="/auth" element={<></>}/> */}
       <Route path="/*" element={<Header/>}/>
     </Routes>
     
     <Routes>
+      <Route path="/policies" element={
+        <div style={{
+          height: '90vh',
+          overflow: 'auto',
+        }}>
+          <Tnc />
+        </div>
+      }/>
       <Route path="/" element={<AppBase/>}>
         {/* Public Routes */}
         {/* <Route path="/profile" element={<>

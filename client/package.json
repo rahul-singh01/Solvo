@@ -6,10 +6,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.14.1",
+    "@mui/material": "^5.15.15",
     "@react-oauth/google": "^0.11.0",
     "axios": "^1.4.0",
     "moment-timezone": "^0.5.43",
